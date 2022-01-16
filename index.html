@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 16 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center p-1">COVIT 19</h2>
+        <button class="btn btn-success mb-2 float-right" onclick="handelUpdate()">Xem ngay</button><br>
+        <h4>Những người tiêm vacxin sinh năm dưới 2000: </h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent">
+
+            </tbody>
+        </table>
+
+        <!-- bảng chi phí -->
+        <h4>Bảng chi phí</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Money</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent2">
+
+            </tbody>
+            <tfoot class="bg-info text-white">
+                <tr>
+                    <td colspan="3">Tổng chi phí cho những người sinh trước 2000</td>
+                    <td id="totalBefore"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Tổng chi phí cho những người sinh sau năm 2000</td>
+                    <td id="totalAfter"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <!-- bảng những người từ 14 trở lên -->
+        <h4>Bảng những người từ 14 tuổi trở lên</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <td>DOB</td>
+                    <th>Age</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent3">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">So tien phai chi</td>
+                    <td id="cost3"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <!-- Bang ds theo Id chan -->
+        <h2 class="text-center text-bold text-primary mt-3">Những người có ID chẵn</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>DOB</td>
+                </tr>
+            </thead>
+            <tbody id="tableEven">
+
+            </tbody>
+        </table>
+
+        <!-- Bang ds theo Id le -->
+        <h2 class="text-center text-bold text-primary mt-3">Những người có ID lẻ</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>DOB</td>
+                </tr>
+            </thead>
+            <tbody id="tableOdd">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
